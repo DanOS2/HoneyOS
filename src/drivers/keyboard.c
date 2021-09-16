@@ -48,7 +48,9 @@ void keyboard_handler(){
         break;
     }
     if(i > 0) {
-        t_putch(kbdus[scancode]);
+        t_print("Key pressed ");
+        t_putint(scancode);
+        t_print("\n");
     }
 }
 
